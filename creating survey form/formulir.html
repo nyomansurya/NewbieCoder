@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="form penilaian we fittness center">
+        <title>Formulir Penilaian We Fittness Center</title>
+    </head>
+    <body>
+         <div class="header">
+            <header>
+                <h1>Tingkat Kepuasan Pengguna We Fittness Center </h1>
+                <p> terimakasih atas masukannya.<em> STAY FIT, STAY HAPPY!</em></p>
+            </header>
+        </div>
+        <div class="container">
+            <form class="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Nama</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="ketik namamu di sini"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input 
+                        type="email"
+                        name="email"    
+                        id="email"
+                        class="form-control"
+                        placeholder="ketik emailmu di sini"
+                        required                
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="age-label" for="age">Umur</label>
+                    <input 
+                        type="number"
+                        name="age"
+                        id="age"
+                        class="form-control"
+                        placeholder="umur"
+                        min="10"
+                        max="90"
+                        required>
+                </div>
+                <div class="form-group">
+                    <p>Jenis member apa yang kamu gunakan</p>
+                    <select id="membertype" name="type" class="form-control">
+                        <option disabled selected value>Pilih salah satu</option>
+                        <option value="Harian">Harian</option>
+                        <option value="Bulanan">Bulanan</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Apakah kamu akan merekomendasikan We Gym kepada teman kalian?</p>
+                    <label>
+                        <input 
+                            type="radio"
+                            name="user-recommend"
+                            value="Tentu-saja"
+                            class="input-radio"
+                            />Tentu saja   
+                    </label><br>
+                    <label>
+                        <input 
+                            type="radio"
+                            name="user-recommend"
+                            value="Mungkin"
+                            class="input-radio">
+                            Mungkin
+                    </label><br>
+                    <label>
+                        <input 
+                            type="radio"
+                            name="user-recommend"
+                            value="Tidak tahu"
+                            class="input-radio">
+                            Tidak tahu
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Berapa kali dalam seminggu kamu pergi latihan?</p>
+                    <select id="train-intensity" name="trainning-aweek" class="form-control">
+                        <option disabled selected value>Latihan per minggu</option>
+                        <option value="1x Seminggu">1x Seminggu</option>
+                        <option value="2x Seminggu">2x Seminggu</option>
+                        <option value="3x Seminggu">3x Seminggu</option>
+                        <option value="4x Seminggu">4x Seminggu</option>
+                        <option value="5x Seminggu">5x Seminggu</option>
+                        <option value="6x Seminggu">6x Seminggu</option>
+                        <option value="setiap hari">Setiap hari</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Hal apa yang perlu ditambahkan di We Gym?
+                        <span class="clue">(bisa memilih lebih dari satu)</span>
+                    </p>
+                    <label>
+                        <input 
+                            type="checkbox"
+                            name="alat"
+                            value="squat-rack"
+                            class="input-checkbox">
+                    Squat Rack        
+                    </label><br>
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="alat" 
+                            value="deadlift-platform"
+                            class="input-checkbox">
+                    Deadlift platform
+                    </label><br>
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="alat" 
+                            value="calisthenics-playground"
+                            class="input-checkbox">
+                    Calisthenics Playground 
+                    </label><br>
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="alat" 
+                            value="treadmill"
+                            class="input-checkbox">
+                    Treadmill
+                    </label><br>                    
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="alat" 
+                            value="combat-class"
+                            class="input-checkbox">
+                    Combat Class
+                    </label><br>
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="alat" 
+                            value="zumba-class"
+                            class="input-checkbox">
+                    Zumba Class
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Kritik dan saran</p>
+                    <textarea name="comment" id="comments" class="input-textarea" placeholder="tuliskan di sini..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </div>
+                </div>
+            </form>
+        </div>
+    </body>   
+</html>
+<img src="" alt="">

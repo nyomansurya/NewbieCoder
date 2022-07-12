@@ -1,0 +1,88 @@
+body ::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    background: var(--color-grey);
+    background-image: linear-gradient(146deg, rgba(87,87,87,1) 0%, rgba(108,108,108,0.8802871490393032) 50%, rgba(88,88,88,0.9139005944174545) 100%), 
+    url(https://images.unsplash.com/photo-1570829460005-c840387bb1ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OHx8fGVufDB8fHx8&w=1000&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    text-align: center;
+    padding-top: 2ch;
+    padding-bottom: 2ch;
+    color: whitesmoke;
+}
+.container {
+    background-color: rgba(32, 32, 32, 0.522);
+    width: 800px;
+    margin: auto;
+    color: whitesmoke;
+    padding: 1cm;
+    border-radius: 0.2cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom:0.2cm;
+}
+label, p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:large;
+}
+.form-control {
+    display: block;
+    margin:auto;
+    width:100%;
+    height: 1cm;
+    box-sizing: border-box;
+    border-radius: 0.1cm;
+    padding: 0.2cm ;
+}
+.form-group {
+    margin :1.3cm;
+    
+}
+.clue {
+    font-size: small;
+}
+.input-checkbox {
+    margin:0.cm;
+}
+.submit-button {
+    width: 100%;
+    height: 1cm;
+    background-color: rgb(85, 85, 85);
+    border-radius: 0.1cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max
+}
+
+textarea {
+    width: 100%;
+    height: 3cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.2cm;
+    box-sizing: border-box;
+    
+}
+
+button:hover {
+    width: 100%;
+    height: 1cm;
+    background-color: rgb(193, 154, 154);
+    border-radius: 0.1cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max
+}
