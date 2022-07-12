@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body    {
+   font-family: Poppins, sans-serif;
+   display: flex;
+   background-color: rgb(238, 233, 229);
+}
+
+main header {
+    font-size: 30px;
+}
+/*navigation bar*/
+nav {
+    width: 1100px;
+    text-decoration: none;
+    padding-right: 5px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    line-height: 30px;
+}
+
+nav a:first-of-type {
+    padding-top: 10px;
+}
+
+nav header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav :hover {
+    
+}
+
+/* main section*/
+
+main {
+    padding: 5px;
+    border-left: 2px solid black;
+    /*supaya menu main tidak menyeret ke atas nav*/
+    height: 100vh;
+    overflow-y:scroll;
+}
+
+h5 {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom:-5px ;
+}
+
+section header {
+    font-weight: bold;
+}
+
+.code-example {
+    background-color: rgb(203, 216, 194);
+
+    display:flex;
+    width: fit-content;
+    text-align: left;
+    border-radius: 4px;
+}
+
+.note {
+    background-color: rgb(123, 228, 47);
+    width: 400px;
+    padding-left: 30px;
+    border-radius: 0 4px 4px 0;
+    padding-right: 20px;
+    border-left: 6px solid rgb(12, 15, 12);
+}
+
+/*media query*/
+
+@media only screen and (max-width:576px) {
+    body {
+        flex-direction: column;
+    }
+
+    nav {
+        overflow-y: scroll;
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar ul {
+      border: 1px solid;
+      height: 207px;
+    }
+  
+    #navbar {
+      background-color: white;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+    }
+  
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 270px;
+    }
+  }
+  

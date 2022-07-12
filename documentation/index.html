@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML Basic</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>In This Article</header>
+        <a href="#Introduction_to_HTML" class="nav-link">Introduction to HTML</a>
+        <a href="#Prerequisites" class="nav-link">Prerequisites</a>
+        <a href="#Guides" class="nav-link">Guides</a>
+        <a href="#The_basics:_headings_and_paragraphs" class="nav-link">The Basics: headings and paragraphs</a>
+        <a href="#Lists" class="nav-link">Lists</a>
+        <a href="#Emphasis_and_importance" class="nav-link">Emphasis and importance</a>
+        <a href="#Reference" class="nav-link">Reference</a>     
+    </nav>
+    <main class="main-doc" id="main-doc">
+        <section class="main-section" id="Introduction_to_HTML">
+            <header>Introduction to HTML</header>
+            <p>At its heart, HTML is a language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page. This module will introduce the first two of these and introduce fundamental concepts and syntax you need to know to understand HTML.
+            </p>
+        </section>
+        <section class="main-section" id="Prerequisites">
+            <header>Prerequisites</header>
+            <p>Before starting this module, you don't need any previous HTML knowledge, but you should have at least basic familiarity with using computers and using the web passively (i.e., just looking at it and consuming content). You should have a basic work environment set up (as detailed in Installing basic software), and understand how to create and manage files (as detailed in Dealing with files). Both are parts of our Getting started with the web complete beginner's module.
+
+                <div class="note">
+                    Note: If you are working on a computer/tablet/other device where you don't have the ability to create your own files, you could try out (most of) the code examples in an online coding program such as JSBin or Glitch   
+                </div>
+            </p>
+        </section>
+        <section class="main-section" id="Guides">
+            <header>Guides</header>
+            <p>This module contains the following articles, which will take you through all the basic theory of HTML and provide ample opportunity for you to test out some skills.</p>
+            <!--SUBBAB GUIDES-->
+            <h5>Getting started with HTML</h5>
+            <p class="subbab">Covers the absolute basics of HTML, to get you started — we define elements, attributes, and other important terms, and show where they fit in the language. We also show how a typical HTML page is structured and how an HTML element is structured, and explain other important basic language features. Along the way, we'll play with some HTML to get you interested!</p>
+            <!--jawaban title-->
+            <h5>What's in the head? Metadata in HTML</h5>
+            <p class="subbab">The head of an HTML document is the part that is not displayed in the web browser when the page is loaded. It contains information such as the page <code>&lt;title&gt;</code>, links to CSS (if you want to style your HTML content with CSS), links to custom favicons, and metadata (data about the HTML, such as who wrote it, and important keywords that describe the document).</p>
+          
+            <h5>HTML text fundamentals</h5>
+            <p class="subbab">One of HTML's main jobs is to give text meaning (also known as semantics), so that the browser knows how to display it correctly. This article looks at how to use HTML to break up a block of text into a structure of headings and paragraphs, add emphasis/importance to words, create lists, and more.</p> </xmp>
+
+            <h5>Creating hyperlinks</h5>
+            <p class="subbab">Hyperlinks are really important — they are what makes the web a web. This article shows the syntax required to make a link and discusses best practices for links.</p>
+
+            <h5>Advanced text formatting</h5>
+            <p class="subbab">There are many other elements in HTML for formatting text that we didn't get to in the HTML text fundamentals article. The elements here are less well-known, but still useful to know about. In this article, you'll learn about marking up quotations, description lists, computer code and other related text, subscript and superscript, contact information, and more.</p>
+
+            <h5>Document and website structure</h5>
+            <p class="subbab">As well as defining individual parts of your page (such as "a paragraph" or "an image"), HTML is also used to define areas of your website (such as "the header," "the navigation menu," or "the main content column.") This article looks into how to plan a basic website structure and how to write the HTML to represent this structure.</p>
+
+            <h5>Debugging HTML</h5>
+            <p class="subbab">Writing HTML is fine, but what if something goes wrong, and you can't work out where the error in the code is? This article will introduce you to some tools that can help.</p>
+        </section>
+        <section class="main-section" id="The_basics:_headings_and_paragraphs">
+            <header>The basics: headings and paragraphs</header>
+            <p>Most structured text consists of headings and paragraphs, whether you are reading a story, a newspaper, a college textbook, a magazine, etc.</p>
+
+            <p>Structured content makes the reading experience easier and more enjoyable.</p>
+
+            <p>In HTML, each paragraph has to be wrapped in a <code>&lt;p&gt;</code> element, like so:</p>
+<div class="code-example">
+<pre>               
+    &lt;p&gt;I am a paragraph, oh yes I am.&lt;/p&gt;   
+</pre>
+</div>
+            <p>Each heading has to be wrapped in a heading element:</p>
+<div class="code-example">
+<pre>                
+    &lt;h1&gt;I am the title of the story.&lt;/h1&gt;   
+</pre>
+</div>
+            <p>There are six heading elements: <code>&lt;h1&gt;</code>,<code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, and <code>&lt;h6&gt;</code>. Each element represents a different level of content in the document; <code>&lt;h1&gt;</code> represents the main heading, <code>&lt;h2&gt;</code> represents subheadings, <code>&lt;h3&gt;</code> represents sub-subheadings, and so on.</p>
+
+            <h5>Implementing structural hierarchy</h5>
+            <p class="subbab">For example, in this story, the <code>&lt;h1&gt;</code> element represents the title of the story, the <code>&lt;h2&gt;</code> elements represent the title of each chapter, and the <code>&lt;h3&gt;</code> elements represent sub-sections of each chapter:</p>
+                  <div class="code-example">
+                  <xmp>
+    <h1>The Crushing Bore</h1>
+
+    <p>By Chris Mills</p>
+
+    <h2>Chapter 1: The dark night</h2>
+
+    <p>It was a dark night. Somewhere, an owl hooted. The rain lashed down on the ...</p>
+
+    <h2>Chapter 2: The eternal silence</h2>
+
+    p>Our protagonist could not so much as a whisper out of the shadowy figure ...</p>
+
+    <h3>The specter speaks</h3>
+
+    <p>Several more hours had passed, when all of a sudden the specter sat bolt upright and exclaimed, "Please have mercy on my soul!"</p>   
+                  </xmp>
+                </div>
+            <p class="subbab">It's really up to you what the elements involved represent, as long as the hierarchy makes sense. You just need to bear in mind a few best practices as you create such structures:</p>
+            <ul>
+            <li>Preferably, you should use a single <code>&lt;h1&gt;</code> per page—this is the top level heading, and all others sit below this in the hierarchy.
+            Make sure you use the headings in the correct order in the hierarchy. Don't use <code>&lt;h3&gt;</code> elements to represent subheadings, followed by <code>&lt;h2&gt;</code> elements to represent sub-subheadings—that doesn't make sense and will lead to weird results.</li> 
+            <br>
+            <li>Of the six heading levels available, you should aim to use no more than three per page, unless you feel it is necessary. Documents with many levels (for example, a deep heading hierarchy) become unwieldy and difficult to navigate. On such occasions, it is advisable to spread the content over multiple pages if possible.</li>
+            <br>
+            <li>Of the six heading levels available, you should aim to use no more than three per page, unless you feel it is necessary. Documents with many levels (for example, a deep heading hierarchy) become unwieldy and difficult to navigate. On such occasions, it is advisable to spread the content over multiple pages if possible.</li>
+            </ul>
+            </p>
+
+            <h5>Why do we need structure?</h5>
+            <p class="subbab">To answer this question, let's take a look at text-start.html—the starting point of our running example for this article (a nice hummus recipe). You should save a copy of this file on your local machine, as you'll need it for the exercises later on. This document's body currently contains multiple pieces of content. They aren't marked up in any way, but they are separated with line breaks (Enter/Return pressed to go onto the next line).
+                <br><br>
+            However, when you open the document in your browser, you'll see that the text appears as a big chunk!
+                <br><br>
+            This is because there are no elements to give the content structure, so the browser does not know what is a heading and what is a paragraph. Furthermore:</p>
+                <ul>
+                    <li>
+                        Users looking at a web page tend to scan quickly to find relevant content, often just reading the headings, to begin with. (We usually spend a very short time on a web page.) If they can't see anything useful within a few seconds, they'll likely get frustrated and go somewhere else.
+                    </li>
+                    <li>
+                        Search engines indexing your page consider the contents of headings as important keywords for influencing the page's search rankings. Without headings, your page will perform poorly in terms of SEO (Search Engine Optimization).
+                    </li>
+                    <li>
+                        Severely visually impaired people often don't read web pages; they listen to them instead. This is done with software called a screen reader. This software provides ways to get fast access to given text content. Among the various techniques used, they provide an outline of the document by reading out the headings, allowing their users to find the information they need quickly. If headings are not available, they will be forced to listen to the whole document read out loud.
+                    </li>
+                    <li>
+                        To style content with CSS, or make it do interesting things with JavaScript, you need to have elements wrapping the relevant content, so CSS/JavaScript can effectively target it.
+                    </li>
+                </ul>
+            <p class="subbab">Therefore, we need to give our content structural markup.
+            </p>
+
+            <h5>Why do we need semantics?</h5>
+            <p class="subbab">Semantics are relied on everywhere around us—we rely on previous experience to tell us what the function of an everyday object is; when we see something, we know what its function will be. So, for example, we expect a red traffic light to mean "stop," and a green traffic light to mean "go." Things can get tricky very quickly if the wrong semantics are applied. (Do any countries use red to mean "go"? We hope not.)
+                <br><br>
+            In a similar vein, we need to make sure we are using the correct elements, giving our content the correct meaning, function, or appearance. In this context, the <code>&lt;h1&gt;</code> element is also a semantic element, which gives the text it wraps around the role (or meaning) of "a top level heading on your page."
+<div class="code-example">
+<xmp>
+    <h1>This is a top level heading</h1>    
+</xmp>
+</div>
+            
+            By default, the browser will give it a large font size to make it look like a heading (although you could style it to look like anything you wanted using CSS). More importantly, its semantic value will be used in multiple ways, for example by search engines and screen readers (as mentioned above).
+                <br><br>
+            On the other hand, you could make any element look like a top level heading. Consider the following:</p>
+<div class="code-example">
+<xmp>
+    <span>Is this a top level heading?</span>   
+</xmp>
+</div>
+            <p class="subbab">This is a <span> element. It has no semantics. You use it to wrap content when you want to apply CSS to it (or do something to it with JavaScript) without giving it any extra meaning. (You'll find out more about these later on in the course.) We've applied some CSS to it to make it look like a top level heading, but since it has no semantic value, it will not get any of the extra benefits described above. It is a good idea to use the relevant HTML element for the job.
+            </p>
+        </section>
+        <section class="main-section" id="Lists">
+            <header>Lists</header>
+            <p>Now let's turn our attention to lists. Lists are everywhere in life—from your shopping list to the list of directions you subconsciously follow to get to your house every day, to the lists of instructions you are following in these tutorials! Lists are everywhere on the web, too, and we've got three different types to worry about.</p>
+
+            <h5>Unordered</h5>
+            <p>Unordered lists are used to mark up lists of items for which the order of the items doesn't matter. Let's take a shopping list as an example:
+            <div class="code-example">
+            <pre>
+    milk
+    eggs
+    bread
+    hummus   
+            </pre>
+            </div>
+            Every unordered list starts off with a <code>&lt;ul&gt;</code> element this wraps around all the list items:\
+            <div class="code-example">
+            <xmp>
+    <ul>
+    milk
+    eggs
+    bread
+    hummus
+    </ul>
+            </xmp>
+        </div>
+            The last step is to wrap each list item in a <code>&lt;li&gt;</code> (list item) element:
+    <code class="code-example">
+    <xmp>
+    <ul>
+        <li>milk</li>
+        <li>eggs</li>
+        <li>bread</li>
+        <li>hummus</li>  
+    </ul>
+    </xmp>
+    </code>
+            </p>
+
+        <h5>Ordered</h5>
+        <p>Ordered lists are lists in which the order of the items does matter. Let's take a set of directions as an example:
+        <div class="code-example">
+            <pre>
+    Drive to the end of the road
+    Turn right
+    Go straight across the first two roundabouts
+    Turn left at the third roundabout
+    The school is on your right, 300 meters up the road   
+            </pre>
+        </div>
+        <br>
+        The markup structure is the same as for unordered lists, except that you have to wrap the list items in an <code>&lt;ol&gt;</code> element, rather than <code>&lt;ul&gt;</code>:
+        <br><br>
+        <div class="code-example">
+            <xmp>
+    <ol>
+        <li>Drive to the end of the road</li>
+        <li>Turn right</li>
+        <li>Go straight across the first two roundabouts</li>
+        <li>Turn left at the third roundabout</li>
+        <li>The school is on your right, 300 meters up the road</li>      
+    </ol>
+            </xmp>
+        </div>
+        </p>
+
+        <h5>Nesting lists</h5>
+        <p>It is perfectly OK to nest one list inside another one. You might want to have some sub-bullets sitting below a top-level bullet. Let's take the second list from our recipe example:
+        <div class="code-example">
+            <xmp>
+    <ol>
+        <li>Remove the skin from the garlic, and chop coarsely.</li>
+        <li>Remove all the seeds and stalk from the pepper, and chop coarsely.</li>    
+        <li>Add all the ingredients into a food processor.</li>
+        <li>Process all the ingredients into a paste.</li>
+        <li>If you want a coarse "chunky" hummus, process it for a short time.</li>
+        <li>If you want a smooth hummus, process it for a longer time.</li>
+    </ol>
+            </xmp>
+        </div>
+        <br>
+        Since the last two bullets are very closely related to the one before them (they read like sub-instructions or choices that fit below that bullet), it might make sense to nest them inside their own unordered list and put that list inside the current fourth bullet. This would look like so:
+        <br><br>
+        <div class="code-example">
+            <xmp>
+    <ol>
+        <li>Remove the skin from the garlic, and chop coarsely.</li>
+        <li>Remove all the seeds and stalk from the pepper, and chop coarsely.</li>
+        <li>Add all the ingredients into a food processor.</li>
+        <li>Process all the ingredients into a paste.
+            <ul>
+                <li>If you want a coarse "chunky" hummus, process it for a short time.</li>   
+                <li>If you want a smooth hummus, process it for a longer time.</li>
+            </ul>
+        </li>
+    </ol>
+            </xmp>
+        </div>
+        <br>
+        Try going back to the previous active learning example and updating the second list like this.
+        </p>
+         </section>
+        <section class="main-section" id="Emphasis_and_importance">
+            <header>Emphasis and importance</header>
+            <p>In human language, we often emphasize certain words to alter the meaning of a sentence, and we often want to mark certain words as important or different in some way. HTML provides various semantic elements to allow us to mark up textual content with such effects, and in this section, we'll look at a few of the most common ones.</p>
+
+            <h5>Emphasis</h5>
+            <p>When we want to add emphasis in spoken language, we stress certain words, subtly altering the meaning of what we are saying. Similarly, in written language we tend to stress words by putting them in italics. For example, the following two sentences have different meanings.
+            
+            <div class="note">
+                <br>
+                    I am glad you weren't late.   
+                <br><br>
+                    I am <em>glad</em> you weren't <em>late</em>.
+                <br><br>
+            </div>
+            <br>
+            The first sentence sounds genuinely relieved that the person wasn't late. In contrast, the second one, with both the words "glad" and "late" in italics, sounds sarcastic or passive-aggressive, expressing annoyance that the person arrived a bit late.
+            In HTML we use the <code>&lt;em&gt;</code> (emphasis) element to mark up such instances. As well as making the document more interesting to read, these are recognized by screen readers and spoken out in a different tone of voice. Browsers style this as italic by default, but you shouldn't use this tag purely to get italic styling. To do that, you'd use a <code>&lt;span&gt;</code> element and some CSS, or perhaps an <code>&lt;i&gt;</code> element (see below).
+            <br><br>
+            <div class="code-example">
+                <xmp>
+    <p>This liquid is <strong>highly toxic</strong>.</p>
+
+    <p>I am counting on you. <strong>Do not</strong> be late!</p>   
+                </xmp>
+            </div>
+            <br>
+            You can nest strong and emphasis inside one another if desired:
+            <br><br>
+            <div class="code-example">
+                <xmp>
+    <p>This liquid is <strong>highly toxic</strong> —
+    if you drink it, <strong>you may <em>die</em></strong>.</p>     
+                </xmp>
+            </div>
+            </p>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML" target="_blank">MDN</a> </p>
+        </section>
+    </main>
+</body>
+</html>
